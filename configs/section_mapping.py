@@ -18,11 +18,6 @@ SECTION_STANDARDIZATION_MAPPING = {
     'sleep:': 'SLEEP',
 }
 
-
-# ['details:', 'detail:', 'impression:', 'seizures:', 'description:', 'background:']
-# ['detail:', 'background:', 'seizures:', 'epileptiform abnormalities:', 'interictal epileptiform abnormalities:', 
-#  'events/seizures:', 'impression:', 'interpretation:', 'sleep:', 'description:', 'details:', 'background activity:']
-
 STANDARDIZED_SECTION_DESCRIPTIONS = {
     'EEG DESCRIPTION/DETAILS': 'Detailed narrative of EEG findings including background activity, sleep stages, physiologic variants, and abnormalities observed during the recording period.',
     'IMPRESSION/INTERPRETATION': 'Clinical summary and interpretation of findings, including overall assessment (normal/abnormal), significance of abnormalities, and correlation with clinical context.',
