@@ -25,7 +25,7 @@ from accelerate import Accelerator
 
 from utils.utils import seed_everything, extract_json, clean_generation_for_json_parsing
 
-# print("CUDA_VISIBLE_DEVICES env:", os.environ.get("CUDA_VISIBLE_DEVICES"))
+
 
 
 class Tee:
