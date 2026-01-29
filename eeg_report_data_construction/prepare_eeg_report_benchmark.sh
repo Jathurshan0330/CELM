@@ -1,11 +1,3 @@
-source /home/jp65/miniconda3/etc/profile.d/conda.sh
-conda deactivate
-conda activate LSE_EEG
-cd /home/jp65/EEG_Report_Generative_FM/EEG_Report_Generative_FM/data_preprocessing
-
-
-
-
 # Extract and format neurology reports using Meta-Llama-3-8B-Instruct
 site='[SITE_ID]' # S0001 or S0002
 data_path='[PATH_TO_NEUROLOGY_REPORTS]' # I0001_neurology_reports
