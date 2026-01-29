@@ -25,7 +25,7 @@ from accelerate import Accelerator
 
 from utils.utils import seed_everything
 
-# print("CUDA_VISIBLE_DEVICES env:", os.environ.get("CUDA_VISIBLE_DEVICES"))
+
 
 
 class Tee:
@@ -531,29 +531,7 @@ if __name__ == "__main__":
             pbar = enumerate(train_data_loader)
             
         for batch_idx, batch in pbar:
-            # try:
-            #     should_skip = any(eeg_session.shape[0] > 1000
-            #         for batch_eeg in batch['eeg_segments']
-            #         for eeg_session in batch_eeg)
-            # except Exception as e:
-            #     should_skip = True
-            #     if is_main_process:
-            #         print(f"Error checking batch, skipping: {e}")
             
-            # if args.use_accelerate:
-            #     # Synchronize skip decision across all ranks
-            #     skip_tensor = torch.tensor([1 if should_skip else 0], 
-            #                                 dtype=torch.int32, 
-            #                                 device=accelerator.device)
-            #     skip_tensor = accelerator.gather(skip_tensor)
-            #     should_skip = skip_tensor.max().item() > 0
-
-            # if should_skip:
-            #     if is_main_process:
-            #         print(f"Skipping batch {batch_idx} (synced across ranks)")
-            #     continue
-            
-            # any eeg data >1000 skip
             should_skip = any(eeg_session.shape[0] > 1000
                   for batch_eeg in batch['eeg_segments']
                   for eeg_session in batch_eeg)
@@ -569,16 +547,6 @@ if __name__ == "__main__":
                     print("Skipping batch (synced across ranks)")
                 continue
         
-            # if any(eeg_session.shape[0] > 1000 for batch_eeg in batch['eeg_segments'] for eeg_session in batch_eeg):
-            #     for batch_eeg in batch['eeg_segments']:
-            #         for eeg_session in batch_eeg:
-            #             if eeg_session.shape[0] > 1000:
-            #                 print(f'skipping batch as it has eeg data >1000')
-            #                 print(f'eeg_session.shape: {eeg_session.shape}')
-            #                 continue
-            
-            #     print(f'skipping batch as it has eeg data >1000')
-            #     continue
             
             # Training step
             metrics = train_step(
