@@ -37,8 +37,13 @@ Run the following script in ./eeg_report_data_construction to construct the EEG-
 ```
 Jupyter notebooks in ./eeg_report_data_construction/data_splits can be used to create the data splits for S0001 and S0002. 
 
+## CELM Inference
+Run the following scripts using the pretrained weights for the projectors in ./pretrained_CELM_projectors, and infer our CELM. Make sure to download the checkpoints for CBraMod from  https://huggingface.co/weighting666/CBraMod and add them to ./eeg_encoders/pretrained_checkpoints.
+```
+./CELM_inference.sh
+```
 
-## CELM Training
+## CELM Training and Inference
 Run the following script to train the Clinical EEG Language Model. Make sure to download the checkpoints for CBraMod from  https://huggingface.co/weighting666/CBraMod and add them to ./eeg_encoders/pretrained_checkpoints. The script also enables inference and evaluation on the test set.
 ```
 ./scripts/CELM_training.sh

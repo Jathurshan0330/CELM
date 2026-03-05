@@ -17,8 +17,8 @@ import math
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 from eeg_encoders.cbramod import CBraMod_Wrapper
-from eeg_encoders.labram import LaBraM
-from eeg_encoders.tfm_tokenizer import TFM_Tokenizer
+# from eeg_encoders.labram import LaBraM
+# from eeg_encoders.tfm_tokenizer import TFM_Tokenizer
 
 from utils.utils import seed_everything
 

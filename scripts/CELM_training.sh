@@ -2,8 +2,8 @@
 
 # Model parameters
 eeg_encoder_model='cbramod'
-llm_model='google/gemma-3-1b-it'
-projector='sequence_transformer_projector' # SCA: sequence_transformer_projector SCC: sequence_transformer_perceiver_projector Linear: linear Perceiver: perceiver_projector
+llm_model='Qwen/Qwen3-4B-Instruct-2507'
+projector='sequence_transformer_linear_projector' # SCA: sequence_transformer_linear_projector SCC: sequence_transformer_perceiver_projector Linear: linear Perceiver: perceiver_projector
 training_mode='projection_only'
 
 # Dataset parameters
@@ -36,7 +36,7 @@ accelerate launch --gpu_ids="0,1" --num_processes=2 --multi_gpu CELM_training.py
     
 
 
-lm_model_name='gemma-3-1b-it'
+llm_model_name='Qwen3-4B-Instruct-2507'
 checkpoint_path='[PATH_TO_CHECKPOINT .pt]'
 results_saved_path="[PATH_TO_GENERATION_RESULTS]/inference_results_${site}"
 

@@ -1,0 +1,4 @@
+.env
+./eeg_report_data_construction/data_splits
+./results
+./eeg_encoders/pretrained_checkpoints/cbramod_pretrained_weights.pth
