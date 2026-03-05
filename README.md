@@ -1,6 +1,21 @@
 # Clinical EEG Language Model (CLEM): Neural Signals Generate Clinical Notes in the Wild
 
-## Getting Started
+Generating clinical reports that summarize abnormal patterns, diagnostic findings, and clinical interpretations from long-term EEG recordings remains labor-intensive. We curate a largescale clinical EEG dataset with 9,922 reports paired with approximately 11,000 hours of EEG recordings from 9,048 patients. 
+
+We therefore develop CELM, the first clinical EEG-to-Language foundation model capable of summarizing longduration, variable-length EEG recordings and performing end-to-end clinical report generation at multiple scales, including recording description,
+background activity, epileptiform abnormalities, events/seizures, and impressions. Experimental results show that, with patient history supervision, our method achieves 70%–95% average relative improvements in standard generation metrics (e.g., ROUGE-1 and METEOR) from 0.2–0.3to 0.4–0.6. In the zero-shot setting without patient history, CELM attains generation scores in the range of 0.43–0.52, compared to baselines of 0.17–0.26. CELM integrates pretrained EEG foundation models with language models to enable scalable multimodal learning. We release our model and benchmark construction pipeline in this repository.
+
+<img width="1182" height="1000" alt="43794a7a-1" src="https://github.com/user-attachments/assets/b7502104-a7df-4ad9-9bef-4cfd727558aa" />
+
+
+## 📰 News
+- **[Work in Progress]** releasing model on HuggingFace.
+- **[2026-03-05]** Code released on [GitHub]()!
+- **[2026-03-02]** Accepted to ICLR 2026 Workshop MM Intelligence!
+- **[2026-01-29]** Preprint released on [arXiv](https://arxiv.org/abs/2601.22197)!
+
+
+## 🚀 Quickstart
 
 Clone the repository:
 ```
@@ -42,10 +57,15 @@ For Unimodal + Text + EEG Features baselines
 ./scripts/unimodal_text_and_eeg_features_baseline.sh
 ```
 
-## Citation
+📝 Citation
 If you find our work or this repository interesting and useful, please consider giving a star ⭐.
 ```
-
+@article{pradeepkumar2026neural,
+  title={Neural Signals Generate Clinical Notes in the Wild},
+  author={Pradeepkumar, Jathurshan and Chen, Zheng and Sun, Jimeng},
+  journal={arXiv preprint arXiv:2601.22197},
+  year={2026}
+}
 ```
 
 We appreciate your interest in our work! 😃😃😃😃😃
