@@ -8,7 +8,7 @@ training_mode='projection_only'
 
 # Dataset parameters
 site='[SITE_ID]' # S0001 or S0002
-split_type='[SPLIT_TYPE]' # random_split_data_by_patient or random_split_data_by_patient_wo_portable_eeg_1_session_wo_long_eeg_sessions
+split_type='[SPLIT_TYPE]' 
 normalize_eeg_method='div_by_100'
 task='eeg_llm_projection_only'
 num_workers=8
