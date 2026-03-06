@@ -64,8 +64,8 @@ For Unimodal + Text + EEG Features baselines
 ./scripts/unimodal_text_and_eeg_features_baseline.sh
 ```
 
-📝 Citation
-If you find our work or this repository interesting and useful, please consider giving a star ⭐.
+## 📝 Citation
+If you find our work or this repository interesting and useful, ⭐.
 ```
 @article{pradeepkumar2026neural,
   title={Neural Signals Generate Clinical Notes in the Wild},
