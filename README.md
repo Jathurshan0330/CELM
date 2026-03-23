@@ -10,6 +10,8 @@
 
 <img width="1182" height="1000" alt="43794a7a-1" src="https://github.com/user-attachments/assets/b7502104-a7df-4ad9-9bef-4cfd727558aa" />
 
+## 💡 Overview
+
 Generating clinical reports that summarize abnormal patterns, diagnostic findings, and clinical interpretations from long-term EEG recordings remains labor-intensive. We curate a largescale clinical EEG dataset with 9,922 reports paired with approximately 11,000 hours of EEG recordings from 9,048 patients. 
 
 We therefore develop CELM, the first clinical EEG-to-Language foundation model capable of summarizing longduration, variable-length EEG recordings and performing end-to-end clinical report generation at multiple scales, including recording description,
@@ -24,7 +26,7 @@ background activity, epileptiform abnormalities, events/seizures, and impression
 - **[2026-03-02]** Accepted to ICLR 2026 Workshop MM Intelligence!
 - **[2026-01-29]** Preprint released on [arXiv](https://arxiv.org/abs/2601.22197)!
 
-### Key Results
+## 🥇 Key Results
 
 | Setting | Metric | Best Baseline | CELM |
 |---|---|---|---|
