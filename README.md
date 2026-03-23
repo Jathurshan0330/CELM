@@ -1,7 +1,7 @@
 # Clinical EEG Language Model (CLEM): Neural Signals Generate Clinical Notes in the Wild
 
 [![arXiv](https://img.shields.io/badge/arXiv-2601.22197-b31b1b.svg)](https://arxiv.org/abs/2601.22197)
-[![Slides](https://img.shields.io/badge/Slides-PDF-F5A623.svg)](https://drive.google.com/file/d/13Nb880p0EKJfzANlibfvUjC96GMdsvHG/view?usp=drive_link)
+[![Slides](https://img.shields.io/badge/Slides-PDF-F5A623.svg)](https://drive.google.com/file/d/13Nb880p0EKJfzANlibfvUjC96GMdsvHG/view?usp=sharing)
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-yellow)](https://huggingface.co/Jathurshan/CELM)
 [![Workshop](https://img.shields.io/badge/ICLR_2026-Workshop_on_MultiModal_Intelligence-4b44ce.svg)](https://openreview.net/forum?id=OgSSKlnfBQ)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
