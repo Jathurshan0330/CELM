@@ -1,2 +1,3 @@
 ./results
 ./eeg_encoders/pretrained_checkpoints/cbramod_pretrained_weights.pth
+pretrained_CELM_projectors/
