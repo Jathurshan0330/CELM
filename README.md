@@ -2,11 +2,9 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2601.22197-b31b1b.svg)](https://arxiv.org/abs/2601.22197)
 [![Slides](https://img.shields.io/badge/Slides-PDF-F5A623.svg)](https://drive.google.com/file/d/13Nb880p0EKJfzANlibfvUjC96GMdsvHG/view?usp=sharing)
-[![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-yellow)](https://huggingface.co/Jathurshan/CELM)
 [![Workshop](https://img.shields.io/badge/ICLR_2026-Workshop_on_MultiModal_Intelligence-4b44ce.svg)](https://openreview.net/forum?id=OgSSKlnfBQ)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/Jathurshan0330/CELM?style=social)](https://github.com/Jathurshan0330/CELM)
-
 
 <img width="1182" height="1000" alt="43794a7a-1" src="https://github.com/user-attachments/assets/b7502104-a7df-4ad9-9bef-4cfd727558aa" />
 
