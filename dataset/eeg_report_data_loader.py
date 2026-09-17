@@ -78,7 +78,7 @@ class HarvardEEGReportDataset(torch.utils.data.Dataset):
         eeg = []
         available_channels_list = []
         for processed_eeg_path in processed_eeg_path_list:
-            eeg_files_list = glob.glob(f'{processed_eeg_path}/*.pkl')
+            eeg_files_list = sorted(glob.glob(f'{processed_eeg_path}/*.pkl'))
             eeg_file_temp = []
             available_channels_temp=None
             for eeg_file in eeg_files_list:
